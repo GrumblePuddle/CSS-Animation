@@ -49,6 +49,7 @@ header {
 }
 
 .flex-item-1 {
+    animation: img-1-rotate 5s ease infinite;
 }
 
 .flex-item-2 {
@@ -60,12 +61,35 @@ header {
 }
 
 .flex-item-3 {
+    animation: img-2-rotate 5s ease infinite;
 }
 
 .flex-item img {
     height: 200px;
     width: 200px;
+    border-radius: 50%;
+    
 }
+
+@keyframes img-1-rotate {
+    0% {transform: scale(1) translate(0px, 0px);}
+    25% {transform: scale(1) translate(-50px, -50px);}
+    50% {transform: scale(1) translate(0px, -100px);}
+    75% {transform: scale(1) translate(50px, -50px);}
+    100% {transform: scale(1) translate(0px, 0px);}
+    
+}
+
+@keyframes img-2-rotate {
+    0% {transform: scale(1) translate(0px, 0px);}
+    25% {transform: scale(1) translate(50px, -50px);}
+    50% {transform: scale(1) translate(0px, -100px);}
+    75% {transform: scale(1) translate(-50px, -50px);}
+    100% {transform: scale(1) translate(0px, 0px);}
+    
+}
+
+
 
 .main-packages {
     max-width: 1400px;
