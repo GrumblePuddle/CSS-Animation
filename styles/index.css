@@ -1,18 +1,22 @@
+/*Header section*/
 header {
-    background-color: brown;
+    background-image: url(../images/Party.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px inset grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header-elements {
     max-width: 1400px;
     width: 100%;
     margin: auto;
-    background-color: aqua;
 }
 
 .header-elements ul {
-    width: 800px;
+    width: 820px;
     margin: auto;
-    background-color: blue;
 }
 
 .header-elements ul li {
@@ -20,32 +24,36 @@ header {
     font-size: 2em;
     padding: 15px 25px;
     margin: 20px 40px;
-    border: 1px solid black;
+    border: 4px inset grey;
     border-radius: 10px;
+    background-color: pink;
+}
+
+.header-elements ul li:hover {
+    background-color: green;
+    transition: all 0.7s ease;
+    cursor: pointer;
 }
 
 .header-elements h1 {
+    font-family: 'Bungee Spice', cursive;
     text-align: center;
     font-size: 3em;
 }
 
+/* Paragraph and images in flexbox*/
+
 .flexbox-container {
-    
     width: 100%;
-    
-    
     display: flex;
     justify-content: space-evenly;
-    background-color: blue;
-    border: 1px solid black;
 }
 
 .flex-item {
-    
+    font-family: 'Roboto Mono', monospace;
     max-width: 200px;
     max-height: 300px;
     display: inline-block;
-    border: 1px solid black;
 }
 
 .flex-item-1 {
@@ -68,6 +76,7 @@ header {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    border: 4px inset grey;
     
 }
 
@@ -89,7 +98,7 @@ header {
     
 }
 
-
+/*Main section*/
 
 .main-packages {
     max-width: 1400px;
@@ -102,10 +111,55 @@ header {
 }
 
 .package {
-    background-color: brown;
     max-width: 250px;
     width: 100%;
     max-height: 350px;
-    border: 1px solid black;
+    border: 4px inset grey;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.package-1 {
+    background-color: rgb(22, 212, 22);
+}
+
+.package-2 {
+    background-color: rgb(249, 201, 80);
+}
+
+.package-3 {
+    background-color: rgb(234, 61, 61);
+}
+
+.package h2 {
+    font-family: 'Bungee Spice', cursive;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.package ol {
+    width: 150px;
+    margin: auto;
+}
+
+.package li {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5;
+}
+
+.package button {
+    font-family: 'Roboto Mono', monospace;
+    background-color: pink;
+    padding: 15px 25px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.package button:hover {
+    background-color: green;
+    transition: all 0.7s ease;
+    cursor: pointer;
+    transition-delay: 0.5s;
 }
